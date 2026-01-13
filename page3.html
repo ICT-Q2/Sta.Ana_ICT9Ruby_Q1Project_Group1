@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>OBMC Student Enrollment</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+:root {
+  --obmc-blue: #084571;
+  --obmc-dark: #0d3b66;
+}
+
+/* Background */
+body {
+  background:whitesmoke
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,.1);
+}
+
+/* Overlay */
+.overlay {
+  background: rgba(255, 252, 252, 0.35);
+  padding: 50px 15px;
+}
+
+/* Form Card */
+.form-card {
+  background: rgba(232, 232, 232, 0.9);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Titles */
+.form-title h2 {
+  color: var(--obmc-blue);
+  font-weight: 600;
+}
+
+/* Section */
+.section-title {
+  color: var(--obmc-dark);
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+/* Footer */
+.footer-bar {
+  background: var(--obmc-dark);
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg px-4">
+  <a class="navbar-brand d-flex align-items-center" href="#">
+    <!-- Replace with real OBMC logo -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQctrcutRs6apcaSo9lloldNAJtWbYK8CIyA&s" width="36" class="me-2">
+    <strong>O.B. Montessori Center</strong>
+  </a>
+
+</nav>
+
+<!-- ================= FORM ================= -->
+<div class="overlay">
+  <div class="form-card shadow">
+
+    <div class="text-center form-title mb-4">
+      <h2>OBMC Student Enrollment Form</h2>
+      <p class="text-muted">Fill out the form below to enroll for the upcoming school year.</p>
+    </div>
+
+    <!-- Student Info -->
+    <div class="section-title">Student Information</div>
+    <div class="row g-3 mt-1">
+      <div class="col-md-6">
+        <label class="form-label">First Name</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Last Name</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col-md-4">
+        <label class="form-label">Birth Date</label>
+        <input type="date" class="form-control">
+      </div>
+      <div class="col-md-4">
+        <label class="form-label">Gender</label>
+        <select class="form-select">
+          <option selected disabled>Select</option>
+          <option>Male</option>
+          <option>Female</option>
+        </select>
+      </div>
+      <div class="col-md-4">
+        <label class="form-label">Grade Level</label>
+        <select class="form-select">
+          <option selected disabled>Select</option>
+          <option> Junior Casa</option>
+          <option>Advance Casa</option>
+          <option>Grade 1</option>
+          <option> Grade 2</option>
+          <option>Grade 3</option>
+         <option>Grade 4</option>
+          <option>Grade 5</option>
+          <option>Grade 6</option>
+          <option>Grade 7</option>
+          <option>Grade 8</option>
+           <option>grade 9</option>
+          <option>Grade 10</option>
+          <option>Grade 11</option>
+          <option>Grade 12</option>
+          
+        </select>
+      </div>
+      
+    </div>
+
+    <!-- Contact -->
+    <div class="section-title">Contact Details</div>
+    <div class="row g-3 mt-1">
+      <div class="col-md-6">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Contact Number</label>
+        <input type="text" class="form-control">
+      </div>
+    </div>
+
+
+
+    <div class="form-check mt-3">
+      <input class="form-check-input" type="checkbox">
+      <label class="form-check-label">
+        I confirm that the information provided is true and complete.
+      </label>
+    </div>
+
+    <div class="text-center mt-4">
+      <button class="btn btn-primary px-5">
+        Submit Enrollment
+      </button>
+    </div>
+
+  </div>
+
+  <div class="footer-bar">
+    © 2026 Student Enrollment System | O.B. Montessori Center
+  </div>
+</div>
+
+</body>
+</html>
